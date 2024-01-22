@@ -12,10 +12,8 @@ public class App {
     };
 
     static void printFibonacci(int n) {
-        int count = n;
-        while (count >= 0) {
-            System.out.print(fibonacci(count) + " ");
-            count--;
+        for (int i = 0; i <= n; i++) {
+            System.out.print(fibonacci(i) + " ");
         }
     }
 
