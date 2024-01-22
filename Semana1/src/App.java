@@ -1,6 +1,18 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        piramide(9);
+        String[] arr1 = new String[] { "Morango", "Banana", "Maçã", "Uva", "Caqui" };
+        String[] arr2 = new String[] { "Manga", "Caqui", "Morango", "Amora" };
+        compareArray(arr1, arr2);
+    }
+
+    static void compareArray(String[] arr1, String[] arr2) {
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = 0; j < arr2.length; j++) {
+                if (arr1[i] == arr2[j]) {
+                    System.out.println(arr1[i]);
+                }
+            }
+        }
     }
 
     static void piramide(int n) {
