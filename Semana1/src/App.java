@@ -1,6 +1,12 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        printFibonacci(7);
+        multiply(5);
+    }
+
+    static void multiply(int n) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(n + " x " + i + " = " + n * i);
+        }
     }
 
     static int fibonacci(int n) {
