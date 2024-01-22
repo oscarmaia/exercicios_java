@@ -1,8 +1,22 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        String[] arr1 = new String[] { "Morango", "Banana", "Maçã", "Uva", "Caqui" };
-        String[] arr2 = new String[] { "Manga", "Caqui", "Morango", "Amora" };
-        compareArray(arr1, arr2);
+        Feriado[] feriados = new Feriado[] {
+                new Feriado("01-01-2024", "Confraternização Mundial"),
+                new Feriado("12-02-2024", "Carnaval"),
+                new Feriado("13-02-2024", "Carnaval"),
+                new Feriado("29-03-2024", "Sexta-feira Santa"),
+                new Feriado("21-04-2024", "Tiradentes"),
+                new Feriado("01-05-2024", "Dia do Trabalho"),
+                new Feriado("30-05-2024", "Corpus Christi"),
+                new Feriado("07-09-2024", "Independência do Brasil"),
+                new Feriado("12-10-2024", "Nossa Senhora Aparecida"),
+                new Feriado("02-11-2024", "Finados"),
+                new Feriado("15-11-2024", "Proclamação da República"),
+                new Feriado("20-11-2024", "Dia Nacional de Zumbi e da Consciência Negra"),
+                new Feriado("25-12-2024", "Natal")
+        };
+        Feriado feriado = new Feriado();
+        System.out.println(feriado.isHoliday("01-01-2024", feriados));
     }
 
     static void compareArray(String[] arr1, String[] arr2) {
