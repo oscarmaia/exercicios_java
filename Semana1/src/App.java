@@ -1,6 +1,15 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        multiply(5);
+        piramide(9);
+    }
+
+    static void piramide(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i);
+            }
+            System.out.println();
+        }
     }
 
     static void multiply(int n) {
